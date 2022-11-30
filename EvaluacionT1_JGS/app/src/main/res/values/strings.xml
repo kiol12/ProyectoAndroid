@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Qatar22</string>
+    <string name="consultaResBtn">CONSULTAR RESULTADOS</string>
+    <string name="registrarResBtn">REGISTRAR RESULTADO</string>
+    <string name="golesEquipo1">Goles del equipo 1</string>
+    <string name="guion">-</string>
+    <string name="golesEquipo2">Goles del equipo 2</string>
+    <string name="guardarResultado">GUARDAR RESULTADO</string>
+    <string name="limpiarDatos">LIMPIAR DATOS</string>
+    <string name="seleccionar">SELECCIONAR</string>
+    <string name="seleccionaEquipo2">Selecciona el equipo 2</string>
+    <string name="seleccionaEquipo1">Selecciona el equipo 1</string>
+    <string name="faseGruposHint">Introduce la fase: Fase grupos ,Octavos ,Cuartos ,Tercer puesto, Final</string>
+    <string name="fechaAño">Introduce la fecha dd/mm/yyyy hh:mi</string>
+    <string name="introducirResultado">Introducir Resultado</string>
+    <string name="consResPorPais">Consulta resultados por pais</string>
+    <string name="introPais">Introduce el pais</string>
+
+
+</resources>

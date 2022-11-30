@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margenFotoMain">250dp</dimen>
+    <dimen name="margenConImagen">100dp</dimen>
+    <dimen name="textoBase">24sp</dimen>
+    <dimen name="margenesLateralesBtns">50dp</dimen>
+    <dimen name="textoBasePeque">20sp</dimen>
+    <dimen name="textoBaseMini">12sp</dimen>
+    <dimen name="margenMedio">20dp</dimen>
+    <dimen name="margenMini">10dp</dimen>
+</resources>

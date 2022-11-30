@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ConsultaActivity">
+
+    <TextView
+        android:id="@+id/tvConsultar"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margenMini"
+        android:text="@string/consResPorPais"
+        android:textSize="@dimen/textoBase"
+        android:layout_marginTop="@dimen/margenMedio"
+
+
+        />
+
+    <EditText
+        android:id="@+id/etIntroducePais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margenMini"
+        android:layout_marginTop="@dimen/margenMedio"
+
+        android:hint="@string/introPais"
+        android:layout_below="@+id/tvConsultar"
+
+        />
+
+    <Button
+        android:id="@+id/btnSeleccionar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margenMedio"
+        android:layout_marginLeft="@dimen/margenMedio"
+        android:layout_below="@+id/tvConsultar"
+        android:layout_toRightOf="@+id/etIntroducePais"
+        android:textSize="@dimen/textoBaseMini"
+        android:text="@string/seleccionar"
+
+        />
+
+    <FrameLayout
+        android:id="@+id/frameLay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/etIntroducePais"
+        android:layout_marginTop="@dimen/margenMini"
+        />
+
+    <FrameLayout
+        android:id="@+id/frameLay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLay1"
+        android:layout_marginTop="@dimen/margenMini"
+
+        />
+
+    <FrameLayout
+        android:id="@+id/frameLay3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLay2"
+        android:layout_marginTop="@dimen/margenMini"
+
+        />
+    <FrameLayout
+        android:id="@+id/frameLay4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLay3"
+        android:layout_marginTop="@dimen/margenMini"
+
+        />
+    <FrameLayout
+        android:id="@+id/frameLay5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLay4"
+        android:layout_marginTop="@dimen/margenMini"
+
+        />
+    <FrameLayout
+        android:id="@+id/frameLay6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLay5"
+        android:layout_marginTop="@dimen/margenMini"
+
+        />
+    <FrameLayout
+        android:id="@+id/frameLay7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLay6"
+        android:layout_marginTop="@dimen/margenMini"
+
+        />
+
+
+
+
+</RelativeLayout>

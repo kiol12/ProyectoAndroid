@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvintroResul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textoBase"
+        android:text="@string/introducirResultado"
+        android:layout_marginTop="@dimen/margenMedio"
+        />
+
+    <EditText
+        android:id="@+id/etFechaHora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textoBase"
+        android:layout_below="@+id/tvintroResul"
+        android:hint="@string/fechaAño"
+        android:layout_marginTop="@dimen/margenMedio"
+        />
+
+    <EditText
+        android:id="@+id/tvFaseTorneo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textoBase"
+        android:hint="@string/faseGruposHint"
+        android:layout_below="@+id/etFechaHora"
+        android:layout_marginTop="@dimen/margenMedio"
+
+        />
+
+    <EditText
+        android:id="@+id/etPaisUno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textoBase"
+        android:hint="@string/seleccionaEquipo1"
+        android:layout_below="@+id/tvFaseTorneo"
+        android:layout_marginTop="@dimen/margenMedio"
+        />
+
+    <Button
+        android:id="@+id/btnSelecPaisUno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textoBaseMini"
+        android:text="@string/seleccionar"
+        android:layout_toRightOf="@+id/etPaisUno"
+        android:layout_below="@+id/tvFaseTorneo"
+        android:layout_marginLeft="@dimen/margenMedio"
+        android:layout_marginTop="@dimen/margenMedio"
+
+        />
+
+    <EditText
+        android:id="@+id/etPaisDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textoBase"
+        android:hint="@string/seleccionaEquipo2"
+        android:layout_below="@id/etPaisUno"
+        />
+
+    <Button
+        android:id="@+id/btnSelecPaisDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textoBaseMini"
+        android:text="@string/seleccionar"
+        android:layout_toRightOf="@+id/etPaisDos"
+        android:layout_below="@+id/btnSelecPaisUno"
+        android:layout_marginLeft="@dimen/margenMedio"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPaisDos"
+        android:layout_marginTop="@dimen/margenMedio"
+        android:layout_marginLeft="@dimen/margenMini"
+        >
+        <EditText
+            android:id="@+id/etNumGolesPaisUno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textoBasePeque"
+            android:hint="@string/golesEquipo1"
+
+
+            />
+
+        <TextView
+            android:id="@+id/tvGuion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textoBasePeque"
+            android:text="@string/guion"
+
+            android:layout_marginLeft="@dimen/margenMedio"
+            android:layout_marginRight="@dimen/margenMedio"
+
+            />
+
+        <EditText
+            android:id="@+id/etNumGolesPaisDos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textoBasePeque"
+            android:hint="@string/golesEquipo2"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGuardarDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textoBase"
+        android:text="@string/guardarResultado"
+        android:layout_above="@+id/btnLimpiarDatos"
+        />
+
+    <Button
+        android:id="@+id/btnLimpiarDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textoBase"
+        android:text="@string/limpiarDatos"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
