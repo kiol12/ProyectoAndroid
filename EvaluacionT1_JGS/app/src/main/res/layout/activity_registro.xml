@@ -26,7 +26,7 @@
         />
 
     <EditText
-        android:id="@+id/tvFaseTorneo"
+        android:id="@+id/etFaseTorneo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="@dimen/textoBase"
@@ -42,8 +42,10 @@
         android:layout_height="wrap_content"
         android:textSize="@dimen/textoBase"
         android:hint="@string/seleccionaEquipo1"
-        android:layout_below="@+id/tvFaseTorneo"
+        android:layout_below="@+id/etFaseTorneo"
         android:layout_marginTop="@dimen/margenMedio"
+        android:editable="false"
+        android:focusable="false"
         />
 
     <Button
@@ -53,9 +55,10 @@
         android:textSize="@dimen/textoBaseMini"
         android:text="@string/seleccionar"
         android:layout_toRightOf="@+id/etPaisUno"
-        android:layout_below="@+id/tvFaseTorneo"
+        android:layout_below="@+id/etFaseTorneo"
         android:layout_marginLeft="@dimen/margenMedio"
         android:layout_marginTop="@dimen/margenMedio"
+        android:backgroundTint="@color/qatarColor"
 
         />
 
@@ -66,6 +69,8 @@
         android:textSize="@dimen/textoBase"
         android:hint="@string/seleccionaEquipo2"
         android:layout_below="@id/etPaisUno"
+        android:editable="false"
+        android:focusable="false"
         />
 
     <Button
@@ -78,6 +83,8 @@
         android:layout_below="@+id/btnSelecPaisUno"
         android:layout_marginLeft="@dimen/margenMedio"
         android:layout_marginTop="10dp"
+        android:backgroundTint="@color/qatarColor"
+
         />
 
 
@@ -94,6 +101,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/textoBasePeque"
             android:hint="@string/golesEquipo1"
+            android:inputType="number"
 
 
             />
@@ -116,6 +124,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/textoBasePeque"
             android:hint="@string/golesEquipo2"
+            android:inputType="number"
             />
     </LinearLayout>
 
@@ -126,6 +135,7 @@
         android:textSize="@dimen/textoBase"
         android:text="@string/guardarResultado"
         android:layout_above="@+id/btnLimpiarDatos"
+        android:backgroundTint="@color/qatarColor"
         />
 
     <Button
@@ -135,5 +145,6 @@
         android:textSize="@dimen/textoBase"
         android:text="@string/limpiarDatos"
         android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/qatarColor"
         />
 </RelativeLayout>

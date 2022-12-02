@@ -42,6 +42,7 @@
         android:layout_toRightOf="@+id/etIntroducePais"
         android:textSize="@dimen/textoBaseMini"
         android:text="@string/seleccionar"
+        android:backgroundTint="@color/qatarColor"
 
         />
 

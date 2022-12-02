@@ -17,6 +17,7 @@
         android:layout_marginTop="@dimen/margenConImagen"
         android:layout_marginLeft="@dimen/margenesLateralesBtns"
         android:layout_below="@id/imgMundial"
+        android:backgroundTint="@color/qatarColor"
         />
 
     <Button
@@ -28,6 +29,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="@dimen/margenesLateralesBtns"
         android:layout_below="@id/btnRegistrar"
+        android:backgroundTint="@color/qatarColor"
         />
 
     <ImageView
