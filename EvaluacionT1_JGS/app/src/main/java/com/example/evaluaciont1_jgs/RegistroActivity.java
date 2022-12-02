@@ -12,8 +12,8 @@ import android.widget.Toast;
 public class RegistroActivity extends AppCompatActivity implements View.OnClickListener {
 
 
-    static String SELECCIONAR_PAIS_UNO = "R1";
-    static String SELECCIONAR_PAIS_DOS = "R2";
+    static int SELECCIONAR_PAIS_UNO = 1;
+    static int SELECCIONAR_PAIS_DOS = 2;
 
     EditText  etFecha;
     EditText  etFase;
@@ -48,7 +48,7 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
         btnSeleccionar1.setOnClickListener(this);
         btnSeleccionar2.setOnClickListener(this);
         btnGuardarResultados.setOnClickListener(this);
-        btnLimpiarDatos.setOnClickListener(this);
+        btnLimpiarDatos.setOnClickListener(view -> LimpiarDatos());
     }
 
     @Override
@@ -58,6 +58,7 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
 
             if(comprobarCampos()){
                 Toast.makeText(this,"Datos guardados exitosamente",Toast.LENGTH_LONG).show();
+                LimpiarDatos();
             }
             else{
                 Toast.makeText(this, "Debe introducir todos los datos", Toast.LENGTH_SHORT).show();
@@ -65,19 +66,21 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
 
         }
         else if(v.getId() == R.id.btnLimpiarDatos){
-            btnLimpiarDatos();
+            LimpiarDatos();
         }
         else if(v.getId() == R.id.btnSelecPaisUno){
             Intent i = new Intent(RegistroActivity.this,SeleccionActivity.class);
-            i.putExtra("StringSeleccion",SELECCIONAR_PAIS_UNO);
+            i.putExtra("CodigoSelecPais1",SELECCIONAR_PAIS_UNO);
+            startActivity(i);
           }
         else if(v.getId() == R.id.btnSelecPaisDos){
             Intent i = new Intent(RegistroActivity.this,SeleccionActivity.class);
-            i.putExtra("StringSeleccion",SELECCIONAR_PAIS_DOS);
+            i.putExtra("CodigoSelecPais2",SELECCIONAR_PAIS_DOS);
+            startActivity(i);
         }
     }
 
-    private void btnLimpiarDatos() {
+    private void LimpiarDatos() {
 
         etFecha.setText("");
         etFase.setText("");
