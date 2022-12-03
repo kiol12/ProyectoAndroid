@@ -19,6 +19,39 @@
     <string name="btnAceptarSelec">ACEPTAR</string>
     <string name="etSelecInSelec">Introduce el pais seleccionado</string>
     <string name="tvSelecEquipo">Selección de equipo</string>
+    <string name="Alemania">Alemania</string>
+    <string name="ArabiaSaudi">Arabia Saudí</string>
+    <string name="Argentina">Argentina</string>
+    <string name="Australia">Australia</string>
+    <string name="Bélgica">Bélgica</string>
+    <string name="Brasil">Brasil</string>
+    <string name="Camerún">Camerún</string>
+    <string name="Canadá">Canadá</string>
+    <string name="CoreaDelSur">Corea del Sur</string>
+    <string name="CostaRica">Costa Rica</string>
+    <string name="Croacia">Croacia</string>
+    <string name="Dinamarca">Dinamarca</string>
+    <string name="Ecuador">Ecuador</string>
+    <string name="España">España</string>
+    <string name="EstadosUnidos">Estados Unidos</string>
+    <string name="Francia">Francia</string>
+    <string name="Gales">Gales</string>
+    <string name="Ghana">Ghana</string>
+    <string name="Holanda">Holanda</string>
+    <string name="Inglaterra">Inglaterra</string>
+    <string name="Irán">Irán</string>
+    <string name="Japón">Japón</string>
+    <string name="Marruecos">Marruecos</string>
+    <string name="México">México</string>
+    <string name="Polonia">Polonia</string>
+    <string name="Portugal">Portugal</string>
+    <string name="Qatar">Qatar</string>
+    <string name="Senegal">Senegal</string>
+    <string name="Serbia">Serbia</string>
+    <string name="Suiza">Suiza</string>
+    <string name="Túnez">Túnez</string>
+    <string name="Uruguay">Uruguay</string>
+    <string name="limpiarConsulta">LIMPIAR DATOS</string>
 
 
 </resources>

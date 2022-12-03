@@ -23,6 +23,7 @@
         android:layout_below="@+id/tvintroResul"
         android:hint="@string/fechaAño"
         android:layout_marginTop="@dimen/margenMedio"
+        android:inputType="datetime"
         />
 
     <EditText

@@ -30,6 +30,8 @@
         android:hint="@string/introPais"
         android:layout_below="@+id/tvConsultar"
 
+        android:editable="false"
+        android:focusable="false"
         />
 
     <Button
