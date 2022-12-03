@@ -80,6 +80,7 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
                     if (comprobarFase()) {
                         if (!etEquipo1.getText().toString().equals(etEquipo2.getText().toString())) {
                             Toast.makeText(this, "Datos guardados exitosamente", Toast.LENGTH_LONG).show();
+
                             LimpiarDatos();
                         } else if (etEquipo1.getText().toString().equals(etEquipo2.getText().toString())) {
                             Toast.makeText(this, "Un pais no puede jugar contra si mismo", Toast.LENGTH_LONG).show();

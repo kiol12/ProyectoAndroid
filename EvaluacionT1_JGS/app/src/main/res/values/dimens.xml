@@ -8,4 +8,11 @@
     <dimen name="textoBaseMini">12sp</dimen>
     <dimen name="margenMedio">20dp</dimen>
     <dimen name="margenMini">10dp</dimen>
+    <dimen name="margenTopFragment">25dp</dimen>
+    <dimen name="margenLeftGuionFrag">200dp</dimen>
+    <dimen name="margenLeftGoles2Frag">350dp</dimen>
+    <dimen name="margenLeftEquipo2Frag">225dp</dimen>
+    <dimen name="margenLeftGoles1Frag">150dp</dimen>
+    <dimen name="margenLeftFechaFrag">300dp</dimen>
+
 </resources>

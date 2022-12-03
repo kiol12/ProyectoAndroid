@@ -52,6 +52,8 @@
     <string name="Túnez">Túnez</string>
     <string name="Uruguay">Uruguay</string>
     <string name="limpiarConsulta">LIMPIAR DATOS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

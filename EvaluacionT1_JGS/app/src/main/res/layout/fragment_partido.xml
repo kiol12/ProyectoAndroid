@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PartidoFragment">
+
+
+
+    <TextView
+        android:id="@+id/faseFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="@dimen/margenMini"
+        />
+
+    <TextView
+        android:id="@+id/fechaFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="@dimen/margenLeftFechaFrag"
+
+        />
+    <TextView
+        android:id="@+id/golesEquipo1Fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:paddingTop="@dimen/margenTopFragment"
+        android:paddingLeft="@dimen/margenLeftGoles1Frag"
+
+
+        />
+    <TextView
+        android:id="@+id/equipo2Fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margenTopFragment"
+        android:paddingLeft="@dimen/margenLeftEquipo2Frag"
+
+
+        />
+    <TextView
+        android:id="@+id/golesEquipo2Fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:paddingTop="@dimen/margenTopFragment"
+
+        android:layout_marginLeft="@dimen/margenLeftGoles2Frag"
+
+        />
+    <TextView
+        android:id="@+id/equipo1Fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:paddingTop="@dimen/margenTopFragment"
+        android:layout_marginLeft="@dimen/margenMini"
+
+        />
+    <TextView
+        android:id="@+id/guionFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/guion"
+        android:paddingTop="@dimen/margenTopFragment"
+        android:paddingLeft="@dimen/margenLeftGuionFrag"
+
+
+        />
+
+</FrameLayout>
