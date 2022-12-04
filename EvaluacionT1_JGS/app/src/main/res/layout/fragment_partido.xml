@@ -11,15 +11,16 @@
         android:id="@+id/faseFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:hint="Fase de grupos"
 
         android:layout_marginLeft="@dimen/margenMini"
         />
 
     <TextView
         android:id="@+id/fechaFragment"
+        android:hint="23/11/2022 17:00"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:layout_marginLeft="@dimen/margenLeftFechaFrag"
 
         />
@@ -27,6 +28,7 @@
         android:id="@+id/golesEquipo1Fragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:hint="1"
 
         android:paddingTop="@dimen/margenTopFragment"
         android:paddingLeft="@dimen/margenLeftGoles1Frag"
@@ -35,6 +37,7 @@
         />
     <TextView
         android:id="@+id/equipo2Fragment"
+        android:hint="@string/Uruguay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/margenTopFragment"
@@ -46,7 +49,7 @@
         android:id="@+id/golesEquipo2Fragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:hint="4"
         android:paddingTop="@dimen/margenTopFragment"
 
         android:layout_marginLeft="@dimen/margenLeftGoles2Frag"
@@ -56,6 +59,7 @@
         android:id="@+id/equipo1Fragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:hint="@string/Túnez"
 
         android:paddingTop="@dimen/margenTopFragment"
         android:layout_marginLeft="@dimen/margenMini"

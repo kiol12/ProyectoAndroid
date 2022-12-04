@@ -36,6 +36,7 @@ public class ConsultaActivity extends AppCompatActivity {
     );
 
     ListadoResultados listForFragments;
+    Resultado resultado;
 
     EditText etPais;
     Button btnSelec;
@@ -79,13 +80,12 @@ public class ConsultaActivity extends AppCompatActivity {
 
     private void cargarFragments(String pais) {
 
+        ArrayList<Resultado> resultadosPais = new ArrayList<>();
         listForFragments = new ListadoResultados();
 
-        listForFragments.add(listForFragments.devolverPais(pais));
+        resultadosPais.add(listForFragments.devolverPais(pais));
 
-
-        System.out.println(listForFragments.size());
-
+        System.out.println(resultadosPais.size());
+        }
 
     }
-}
