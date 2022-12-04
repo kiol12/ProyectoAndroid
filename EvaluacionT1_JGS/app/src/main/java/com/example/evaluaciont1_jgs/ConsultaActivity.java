@@ -5,6 +5,8 @@ import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -80,12 +82,69 @@ public class ConsultaActivity extends AppCompatActivity {
 
     private void cargarFragments(String pais) {
 
-        ArrayList<Resultado> resultadosPais = new ArrayList<>();
+        ArrayList<Resultado> resultadosPais;
         listForFragments = new ListadoResultados();
 
-        resultadosPais.add(listForFragments.devolverPais(pais));
+        resultadosPais = (listForFragments.devolverPais(pais));
 
         System.out.println(resultadosPais.size());
+
+
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+
+        for(int i = 1; i < resultadosPais.size();i++) {
+
+            if (i == 1) {
+                ft.add(R.id.frameLay1, PartidoFragment.newInstance(resultadosPais.get(i).getFecha(),resultadosPais.get(i).getFase(),resultadosPais.get(i).getEquipo1(),
+                        resultadosPais.get(i).getGoles1(),resultadosPais.get(i).getEquipo2(),resultadosPais.get(i).getGoles2()));
+                ft.addToBackStack(null);
+                ft.commit();
+            }
+            else if (i == 2){
+                ft.add(R.id.frameLay2, PartidoFragment.newInstance(resultadosPais.get(i).getFecha(),resultadosPais.get(i).getFase(),resultadosPais.get(i).getEquipo1(),
+                        resultadosPais.get(i).getGoles1(),resultadosPais.get(i).getEquipo2(),resultadosPais.get(i).getGoles2()));
+
+                ft.addToBackStack(null);
+                ft.commit();
+            }
+            else if (i == 3){
+                ft.add(R.id.frameLay3, PartidoFragment.newInstance(resultadosPais.get(i).getFecha(),resultadosPais.get(i).getFase(),resultadosPais.get(i).getEquipo1(),
+                        resultadosPais.get(i).getGoles1(),resultadosPais.get(i).getEquipo2(),resultadosPais.get(i).getGoles2()));
+
+                ft.addToBackStack(null);
+                ft.commit();
+            }
+            else if (i == 4){
+                ft.add(R.id.frameLay4, PartidoFragment.newInstance(resultadosPais.get(i).getFecha(),resultadosPais.get(i).getFase(),resultadosPais.get(i).getEquipo1(),
+                        resultadosPais.get(i).getGoles1(),resultadosPais.get(i).getEquipo2(),resultadosPais.get(i).getGoles2()));
+
+                ft.addToBackStack(null);
+                ft.commit();
+            }
+            else if (i == 5){
+                ft.add(R.id.frameLay5, PartidoFragment.newInstance(resultadosPais.get(i).getFecha(),resultadosPais.get(i).getFase(),resultadosPais.get(i).getEquipo1(),
+                        resultadosPais.get(i).getGoles1(),resultadosPais.get(i).getEquipo2(),resultadosPais.get(i).getGoles2()));
+
+                ft.addToBackStack(null);
+                ft.commit();
+            } else if (i == 6) {
+                ft.add(R.id.frameLay6, PartidoFragment.newInstance(resultadosPais.get(i).getFecha(),resultadosPais.get(i).getFase(),resultadosPais.get(i).getEquipo1(),
+                        resultadosPais.get(i).getGoles1(),resultadosPais.get(i).getEquipo2(),resultadosPais.get(i).getGoles2()));
+
+                ft.addToBackStack(null);
+                ft.commit();
+            }
+            else if (i == 7){
+                ft.add(R.id.frameLay7, PartidoFragment.newInstance(resultadosPais.get(i).getFecha(),resultadosPais.get(i).getFase(),resultadosPais.get(i).getEquipo1(),
+                        resultadosPais.get(i).getGoles1(),resultadosPais.get(i).getEquipo2(),resultadosPais.get(i).getGoles2()));
+
+                ft.addToBackStack(null);
+                ft.commit();
+            }
+
+        }
+
         }
 
     }

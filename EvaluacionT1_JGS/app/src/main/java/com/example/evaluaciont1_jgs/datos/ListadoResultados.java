@@ -1,5 +1,6 @@
 package com.example.evaluaciont1_jgs.datos;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 import javax.xml.transform.Result;
@@ -59,14 +60,15 @@ public class ListadoResultados{
         return resultados;
     }
 
-    public Resultado devolverPais(String pais){
+    public ArrayList<Resultado> devolverPais(String pais){
+        ArrayList<Resultado> lista = new ArrayList<>();
         for(Resultado r: resultados){
             if (pais.equals(r.getEquipo1()) ||
                     pais.equals(r.getEquipo2()) ){
-                return  r;
+               lista.add(r);
             }
         }
-        return  null;
+        return  lista;
     }
 
 }
