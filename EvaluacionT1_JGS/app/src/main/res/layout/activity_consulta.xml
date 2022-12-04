@@ -52,9 +52,9 @@
         android:id="@+id/frameLay1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:layout_marginTop="@dimen/margenMedio"
         android:layout_below="@+id/etIntroducePais"
-        android:layout_marginTop="@dimen/margenMini"
+
         />
 
     <FrameLayout
@@ -62,7 +62,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/frameLay1"
-        android:layout_marginTop="@dimen/margenMini"
+        android:layout_marginTop="@dimen/margenMedio"
 
         />
 
@@ -71,7 +71,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/frameLay2"
-        android:layout_marginTop="@dimen/margenMini"
+
+        android:layout_marginTop="@dimen/margenMedio"
 
         />
     <FrameLayout
@@ -79,32 +80,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/frameLay3"
-        android:layout_marginTop="@dimen/margenMini"
-
+        android:layout_marginTop="@dimen/margenMedio"
         />
     <FrameLayout
         android:id="@+id/frameLay5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/frameLay4"
-        android:layout_marginTop="@dimen/margenMini"
-
+        android:layout_marginTop="@dimen/margenMedio"
         />
     <FrameLayout
         android:id="@+id/frameLay6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/frameLay5"
-        android:layout_marginTop="@dimen/margenMini"
-
+        android:layout_marginTop="@dimen/margenMedio"
         />
     <FrameLayout
         android:id="@+id/frameLay7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/frameLay6"
-        android:layout_marginTop="@dimen/margenMini"
-
+        android:layout_marginTop="@dimen/margenMedio"
         />
 
 

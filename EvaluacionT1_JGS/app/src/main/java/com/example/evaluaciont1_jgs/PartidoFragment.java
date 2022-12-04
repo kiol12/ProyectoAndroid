@@ -98,7 +98,7 @@ public class PartidoFragment extends Fragment {
         ((TextView) view.findViewById(R.id.golesEquipo1Fragment)).setText(golesPais1);
         ((TextView) view.findViewById(R.id.equipo2Fragment)).setText(pais2);
         ((TextView) view.findViewById(R.id.golesEquipo2Fragment)).setText(golesPais2);
-        
+
         /*
 
         De esta forma no funciona
