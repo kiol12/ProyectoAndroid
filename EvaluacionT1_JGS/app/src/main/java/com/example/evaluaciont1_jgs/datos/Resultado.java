@@ -11,7 +11,7 @@ public class Resultado {
     private int goles1;
     private int goles2;
 
-    public Resultado(String fecha, String fase, String equipo1, String equipo2, int goles1, int goles2){
+    public Resultado(String fecha, String fase, String equipo1, int goles1 ,String equipo2, int goles2){
 
        this.fecha = fecha;
        this.fase = fase;
@@ -21,5 +21,27 @@ public class Resultado {
        this.goles2 = goles2;
     }
 
+    public String getFecha() {
+        return fecha;
+    }
 
+    public String getFase() {
+        return fase;
+    }
+
+    public String getEquipo1() {
+        return equipo1;
+    }
+
+    public String getEquipo2() {
+        return equipo2;
+    }
+
+    public int getGoles1() {
+        return goles1;
+    }
+
+    public int getGoles2() {
+        return goles2;
+    }
 }

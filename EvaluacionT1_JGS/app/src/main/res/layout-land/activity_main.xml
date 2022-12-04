@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/qatarimagen_proyectoandroid"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/margenConImagen"
+        android:layout_marginTop="@dimen/margenesLateralesBtns"
 
         />
 

@@ -12,6 +12,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 
+import com.example.evaluaciont1_jgs.datos.ListadoResultados;
+import com.example.evaluaciont1_jgs.datos.Resultado;
+
+import java.util.ArrayList;
+
 public class ConsultaActivity extends AppCompatActivity {
     String pais;
 
@@ -29,6 +34,8 @@ public class ConsultaActivity extends AppCompatActivity {
                 }
             }
     );
+
+    ListadoResultados listForFragments;
 
     EditText etPais;
     Button btnSelec;
@@ -69,11 +76,15 @@ public class ConsultaActivity extends AppCompatActivity {
         });
     }
 
+
     private void cargarFragments(String pais) {
 
+        listForFragments = new ListadoResultados();
+
+        listForFragments.add(listForFragments.devolverPais(pais));
 
 
-
+        System.out.println(listForFragments.size());
 
 
     }

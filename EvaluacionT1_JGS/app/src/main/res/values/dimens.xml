@@ -14,5 +14,7 @@
     <dimen name="margenLeftEquipo2Frag">225dp</dimen>
     <dimen name="margenLeftGoles1Frag">150dp</dimen>
     <dimen name="margenLeftFechaFrag">300dp</dimen>
+    <dimen name="lanScaEtPaises">500dp</dimen>
+    <dimen name="textoTitulos">32sp</dimen>
 
 </resources>
